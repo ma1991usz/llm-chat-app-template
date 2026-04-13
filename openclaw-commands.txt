@@ -1,0 +1,20 @@
+pip install aider-chat
+
+openclaw skill install @openclaw/aider-bridge
+openclaw skill install @openclaw/cline-bridge
+openclaw skill install @openclaw/openhands
+openclaw skill install @openclaw/swe-agent
+
+export ANTHROPIC_API_KEY="..."
+export OPENAI_API_KEY="..."
+export HUGGINGFACE_API_KEY="hf_xxx..."
+export GITHUB_TOKEN="ghp_twoj_token_tutaj"
+
+ollama pull qwen2.5-coder:14b
+ollama pull deepseek-coder-v2:16b
+
+# checks
+aider --version
+openclaw skill list
+docker --version
+nvidia-smi
